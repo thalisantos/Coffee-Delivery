@@ -8,8 +8,8 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 body {
-  background: ${(props) => props.theme['base-background']};
-  color: ${(props) => props.theme['base-text']};
+  background: ${(props) => props.theme.colors['base-background']};
+  color: ${(props) => props.theme.colors['base-text']};
   -webkit-font-smoothing: antialiased;
 }
 
@@ -19,9 +19,4 @@ body, input, textarea, button {
   font-size: 1rem;
 }
 
-header {
-  font-family: 'Baloo 2', sans-serif;
-  font-weight: 700;
-  font-size: 1rem ;
-}
 `
